@@ -1,2 +1,3 @@
-# Veri-Bilimine-Giris
-Proje 
+FORD 2. EL ARAÇ FİYAT TAHMİNİ
+
+Bu projede Ford marka 2. el araçların fiyat tahminini yaptık. Öncelikle veri setini temizleyip düzenlemekle başladık. Veride NaN olan değer yoktu ancak year, tax ve engine size sütunlarında hatalı değerler vardı. Bu değerleri uygun şekilde düzenledikten ya da kaldırdıktan sonra sayısal olmayan öznitelikleri sayısallaştırarak korelasyon haritası çıkardık. Modelin daha kolay öğreneceğini düşünerek year sütununu kullanarak age sütunu oluşturduk ve year sütununu sildik. Bu noktada korelasyon haritasından çıkarım yaparak model eğitimine en çok katkı sağlayabilecek öznitelikleri seçtik. Sonrasında da model eğitimine başladık, Catboost modelini kullandık. Modelin parametreleri üzerinde oynayarak en iyi sonucu elde etmeye çalıştık. Modeli hem test hem de eğitim seti için ayrı tahminler de bulundurup ezber durumu var mı kontrol ettik. En sonda da model sonuçlarını gerçek ve tahminleri kıyaslayacak şekilde grafiğe döküp aynı işlemleri RandomForest modeliyle denedik.
